@@ -192,18 +192,159 @@ section h2::after {
   color: var(--primary-blue);
   font-size: 30px;
 }
-.why-us span{
+.why-us span {
   margin-left: 10px;
   font-size: 25px;
   font-weight: 500;
 }
-.why-us p{
+.why-us p {
   font-size: 20px;
+}
+
+/* ====== Find out What ======  */
+.find-out-what p {
+  font-size: 20px;
+}
+.find-out {
+  max-width: 900px;
+}
+.cards-parent {
+  gap: 30px;
+}
+.c-card {
+  max-width: 200px;
+  border: 1px solid var(--primary-blue);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px var(--primary-blue);
+  overflow: hidden;
+}
+.c-card img {
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+.c-card:hover img {
+  transform: scale(1.1);
+}
+.arrow {
+  font-size: 50px;
+  color: var(--primary-blue);
+}
+/* ====== How it Works ====== */
+.step {
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 300ms ease-in-out;
+}
+.step:hover {
+  background: var(--complementary);
+  border-color: var(--complementary);
+  color: var(--white);
+}
+.step:hover .step-icon {
+  color: var(--white);
+}
+.step-no {
+  font-size: 20px;
+}
+.step-header {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.step-text {
+  font-size: 20px;
+}
+.step-icon {
+  color: var(--primary-blue);
+  font-size: 87px;
+  transition: all 300ms ease-in-out;
+}
+/* ====== Are You Ready ====== */
+.ready {
+  background-image: linear-gradient(180deg, #6cb6cc 0%, #ffffff 100%);
+}
+.claim {
+  padding: 90px;
+}
+.claim__header {
+  font-size: 66px;
+}
+.claim__subheader {
+  font-size: 33px;
+}
+.claim__text {
+  font-size: 24px;
+  line-height: 50px;
+}
+.form-parent {
+  padding: 20px;
+}
+
+label::after {
+  content: "*";
+  color: var(--primary-blue);
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  margin-left: 3px;
+}
+.submit-parent {
+  text-align: left;
+}
+.submit {
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+.submit:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  letter-spacing: 3px;
+}
+/* ====== FAQ ====== */
+.faq div h2::after {
+  display: none;
+}
+.faq__text {
+  font-size: 24px;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 0 10px #ddd;
+  padding: 10px;
+}
+.accordion-button:not(.collapsed) {
+  color: #0e1318;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 var(--primary-blue);
+}
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+/* ====== Footer ====== */
+.footer {
+  background: var(--text-black);
+  color: var(--white);
+}
+.footer__header {
+  font-size: 50px;
+}
+.footer__text {
+  font-size: 20px;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li > span {
+  color: var(--gray);
 }
 /* ====== Media Queries ====== */
 @media only screen and (max-width: 500px) {
   .logo {
-    width: 300px;
+    width: 170px;
   }
   .nav-link {
     font-size: 16px;
@@ -225,7 +366,20 @@ section h2::after {
   section h2 {
     font-size: 30px;
   }
-  .why-us span{
+  .why-us span {
     font-size: 20px;
+  }
+  .claim {
+    padding-top: 0px;
+  }
+  .claim__header {
+    font-size: 50px;
+  }
+  .claim__subheader {
+    font-size: 30px;
+  }
+  .claim__text {
+    font-size: 24px;
+    line-height: 50px;
   }
 }
