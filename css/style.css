@@ -370,7 +370,7 @@ label::after {
     font-size: 20px;
   }
   .claim {
-    padding-top: 0px;
+    padding: 0px;
   }
   .claim__header {
     font-size: 50px;
