@@ -262,7 +262,9 @@
         These Are Just Some Of The Businesses We’ve Helped In The Past 30 Days
       </p>
       <!-- Cards started -->
-      <div class="cards-parent mt-4 d-flex justify-content-center flex-wrap align-items-center">
+      <div
+        class="cards-parent mt-4 d-flex justify-content-center flex-wrap align-items-center"
+      >
         <!-- 01 -->
         <div class="c-card d-flex flex-column">
           <img src="img/27387561_m.jpg" alt="" />
@@ -412,50 +414,61 @@
               </div>
             </div>
             <div class="col-md-12">
-              <label for="f-name">Contact Phone Number</label>
+              <label for="phone-no">Contact Phone Number</label>
               <div class="mb-3">
-                <input type="text" name="f-name" id="f-name" class="w-100" />
+                <input
+                  type="text"
+                  name="phone-no"
+                  id="phone-no"
+                  class="w-100"
+                />
               </div>
             </div>
             <div class="col-md-12">
-              <label for="l-name">Contact Email Address</label>
+              <label for="email">Contact Email Address</label>
               <div class="mb-3">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
+                <input type="email" name="email" id="email" class="w-100" />
               </div>
             </div>
             <div class="col-md-12">
-              <label for="l-name"
+              <label for="quest-1"
                 >Do you, or any partial owner of this business, own any
                 percentage of another business? *</label
               >
               <div class="mb-3">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
+                <input type="text" name="quest-1" id="quest-1" class="w-100" />
               </div>
             </div>
             <div class="col-md-12">
-              <label for="l-name">Type of Business/Industry</label>
+              <label for="b-type">Type of Business/Industry</label>
               <div class="mb-3">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
+                <input type="text" name="b-type" id="b-type" class="w-100" />
                 <span>Estimates are available</span>
               </div>
             </div>
             <div class="col-md-6">
-              <label for="l-name">How many W-2s were issued in 2020?</label>
+              <label for="quest-2">How many W-2s were issued in 2020?</label>
               <div class="mb-2">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
+                <input type="text" name="quest-2" id="quest-2" class="w-100" />
               </div>
             </div>
             <div class="col-md-6">
-              <label for="l-name">How many W-2s were issued in 2021?</label>
+              <label for="quest-3">How many W-2s were issued in 2021?</label>
               <div class="mb-2">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
+                <input type="text" name="quest-3" id="quest-3" class="w-100" />
               </div>
             </div>
             <div class="col-md-12">
-              <label for="l-name">Type of Business/Industry</label>
+              <label for="l-name"
+                >Did you operate under a full or partial shutdown order?
+              </label>
               <div class="mb-2">
-                <input type="text" name="l-name" id="l-name" class="w-100" />
-                <span>Estimates are available</span>
+                <select class="w-100 py-1">
+                  <option value="" disabled selected></option>
+                  <option>Yes- Full</option>
+                  <option>Yes- Partial</option>
+                  <option>No</option>
+                </select>
               </div>
             </div>
             <div class="cta submit-parent mt-3">
